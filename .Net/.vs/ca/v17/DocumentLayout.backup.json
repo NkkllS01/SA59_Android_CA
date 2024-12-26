@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\18859\\source\\repos\\ca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|c:\\users\\18859\\source\\repos\\ca\\ca\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|c:\\users\\18859\\source\\repos\\ca\\ca\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|c:\\users\\18859\\source\\repos\\ca\\ca\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ca\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Models\\User.cs",
+              "RelativeToolTip": "ca\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T12:06:27.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "ca\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "ca\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T12:06:22.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ca\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ca\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T11:37:33.39Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
