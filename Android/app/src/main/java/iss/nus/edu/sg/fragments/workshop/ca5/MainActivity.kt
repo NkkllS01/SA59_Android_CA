@@ -12,9 +12,27 @@ import iss.nus.edu.sg.fragments.workshop.ca5.network.LoginResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.os.Handler
+import android.os.Looper
+import android.widget.ImageView
+import okhttp3.*
+import java.io.IOException
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import com.bumptech.glide.Glide
+import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
+    private val apiUrl = "http://10.0.2.2:5125/api/adimage"
+    private lateinit var imageView :ImageView
+    private val handler = Handler(Looper.getMainLooper())
+    private val fetchTask = object : Runnable {
+        override fun run() {
+            fetchImage()
+            handler.postDelayed(this, 3000)
+        }
+    }
     private lateinit var binding: ActivityMainBinding
     private val authApi = ApiClient.retrofit.create(AuthApi::class.java)
 
@@ -23,6 +41,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        imageView = findViewById<ImageView>(R.id.imageView)
+        handler.post(fetchTask)
 
         binding.loginButton.setOnClickListener {
             val username = binding.usernameEditText.text.toString()
@@ -61,5 +82,45 @@ class MainActivity : AppCompatActivity() {
                 }
             })
         }
+    }
+    private fun fetchImage(){
+        val client =OkHttpClient()
+        val request = Request.Builder().url(apiUrl).build()
+
+        client.newCall(request).enqueue(object : okhttp3.Callback {
+            override fun onFailure(call: okhttp3.Call, e: IOException) {
+                runOnUiThread {
+                    Toast.makeText(this@MainActivity,"Failed to fetch image: ${e.message}",Toast.LENGTH_SHORT).show()
+                }
+            }
+            override fun onResponse(call: okhttp3.Call, response: okhttp3.Response) {
+                if (response.isSuccessful) {
+                    val responseBody = response.body?.string()
+                    if (responseBody != null) {
+                        val jsonObject = JSONObject(responseBody)
+                        val imageUrl = jsonObject.getString("imageUrl")
+
+                        runOnUiThread {
+                            Glide.with(this@MainActivity)
+                                .load(imageUrl)
+                                .into(imageView)
+                        }
+                    } else {
+                        runOnUiThread {
+                            Toast.makeText(
+                                this@MainActivity, "Response body is null", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+
+                } else {
+                    runOnUiThread {
+                        Toast.makeText(this@MainActivity, "Failed to fetch image: ${response.code}", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+
+        })
+
+
     }
 }
