@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="734f9b70-e49c-4a5f-8532-833f63850539" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.Net/ca/Controllers/LeaderboardController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.Net/ca/Data/Constants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.Net/ca/Data/ScoreDAO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.Net/ca/Models/Score.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.Net/ca/Models/TopRank.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.Net/ca/db/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/LeaderboardActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/Score.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/drawable/pill_button_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/drawable/white_boarder_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/layout/activity_leaderboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
