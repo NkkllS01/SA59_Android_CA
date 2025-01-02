@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FetchActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20sp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/url_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter URL here"
+            android:layout_weight="0.73"
+            android:textSize="20sp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/fetch_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:text="Fetch"
+            android:textSize="20sp"
+            android:layout_marginEnd="20dp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/image_grid"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:padding="10dp"
+        tools:listitem="@layout/item_image"
+        android:layout_margin="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="20"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloading Images..."
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="5dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginEnd="20dp"
+        >
+        <TextView
+            android:id="@+id/selected_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected: 0 / 6"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginStart ="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
