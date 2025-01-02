@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="734f9b70-e49c-4a5f-8532-833f63850539" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/LeaderboardActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/Score.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/drawable/pill_button_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/drawable/white_boarder_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/layout/activity_leaderboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "freddieckuo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NkkllS01/SA59_Android_CA.git",
+    "accountId": "45955147-20a9-47c9-8e66-ee188d3ddf74"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2r4B8QCo1SiZZ3NKPpbBCLCnHLW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Freddie",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="734f9b70-e49c-4a5f-8532-833f63850539" name="Changes" comment="" />
+      <created>1735808307134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735808307134</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

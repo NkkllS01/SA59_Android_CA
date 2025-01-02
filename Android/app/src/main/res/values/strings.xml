@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CA5</string>
+    <string name="app_name">Android_CA</string>
+    <string name="rank">Rank</string>
+    <string name="username">Username</string>
+    <string name="comp_time">Completion Time</string>
 </resources>
