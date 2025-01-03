@@ -1,7 +1,6 @@
 package iss.nus.edu.sg.fragments.workshop.ca5
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.view.MotionEvent
@@ -128,7 +127,6 @@ class DashboardActivity : AppCompatActivity() {
         val editor = sharedPreferences.edit()
         editor.clear()
         editor.apply()
-
 
         val intent = Intent(this@DashboardActivity, MainActivity::class.java)
         startActivity(intent)
