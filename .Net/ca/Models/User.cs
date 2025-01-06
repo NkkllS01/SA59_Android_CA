@@ -1,9 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ca.Models
 {
+    [Table("User")]
     public class User
     {
+        [Key]
+        [Column("UserId")]
         public int Id { get; set; }
 
         [Required]
