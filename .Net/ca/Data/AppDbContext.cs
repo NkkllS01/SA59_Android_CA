@@ -9,6 +9,6 @@ namespace ca.Data
         {
         }
 
-        public DbSet<User> Users { get; set; } // 定义 Users 表
+        public DbSet<User> Users { get; set; } // 定义 User 表
     }
 }
