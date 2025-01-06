@@ -69,6 +69,16 @@ class FetchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
+        val userType = sharedPreferences.getString("userType","")
+        if (userType == "free") {
+            val adFragment = AdFragment()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.adFragmentContainer, adFragment)
+                .commit()
+        }
+
         binding = ActivityFetchBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

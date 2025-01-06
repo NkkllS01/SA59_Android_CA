@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/adimage": {
+      "get": {
+        "tags": [
+          "Ad"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/auth/login": {
       "post": {
         "tags": [

@@ -53,10 +53,11 @@ class MainActivity : AppCompatActivity() {
                             val editor = sharedPreferences.edit()
                             editor.putBoolean("isLoggedIn", true)  // 设置登录状态为 true
                             editor.putString("username", username)  // 保存用户名
+                            editor.putString("userType",loginResponse.userType)
                             editor.apply()
 
                             // 跳转到 DashboardActivity
-                            val intent = Intent(this@MainActivity, DashboardActivity::class.java)
+                            val intent = Intent(this@MainActivity, FetchActivity::class.java)
                             intent.putExtra("username", username)
                             startActivity(intent)
                             finish()

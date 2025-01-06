@@ -27,12 +27,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <ImageView
-        android:id="@+id/imageView"
+    <FrameLayout
+        android:id="@+id/adFragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="137dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
