@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
+using ca.Models;
 
 public class AdImageDao{
     string connectionString =@"server=localhost;uid=root;pwd=password;database=mobileca";
@@ -17,7 +18,6 @@ public class AdImageDao{
                 AdImage adimage = new AdImage(){
                     Id = (int)reader["Id"],
                     imageurl = (string)reader["imageurl"],
-
                 };
                 adimages.Add(adimage);
             }
@@ -25,5 +25,5 @@ public class AdImageDao{
         }
         return adimages;
 
-}
+        }
 }
