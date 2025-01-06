@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Android_CA.Data;
+using ca.Data;
+using ca.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
 using Newtonsoft.Json;
 
 //Team03 Kuo Chi
-namespace Android_CA.Controllers
+namespace ca.Controllers
 {
     public class LeaderboardController : Controller
     {

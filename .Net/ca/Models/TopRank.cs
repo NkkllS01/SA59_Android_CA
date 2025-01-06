@@ -1,5 +1,8 @@
 //Team03 Kuo Chi
-public class TopRank
+namespace ca.Models
 {
-    public int Top {get; set;}
+    public class TopRank
+    {
+        public int Top {get; set;}
+    }
 }

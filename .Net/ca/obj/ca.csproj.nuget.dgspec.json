@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.csproj": {}
+    "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/ca.csproj": {}
   },
   "projects": {
-    "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.csproj": {
+    "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/ca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.csproj",
+        "projectUniqueName": "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/ca.csproj",
         "projectName": "ca",
-        "projectPath": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.csproj",
-        "packagesPath": "C:\\Users\\Gao Zijie\\.nuget\\packages\\",
-        "outputPath": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\obj\\",
+        "projectPath": "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/ca.csproj",
+        "packagesPath": "/Users/freddiekuo/.nuget/packages/",
+        "outputPath": "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gao Zijie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/freddiekuo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,6 +66,10 @@
               "target": "Package",
               "version": "[9.1.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0-preview.2, )"
@@ -101,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

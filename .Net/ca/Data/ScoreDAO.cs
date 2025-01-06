@@ -1,11 +1,11 @@
-using Android_CA.Models;
+using ca.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 using MySql.Data.MySqlClient;
 using Mysqlx.Resultset;
 
 //Team03 Kuo Chi
-namespace Android_CA.Data
+namespace ca.Data
 {
     public class ScoreDAO
     {

@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="734f9b70-e49c-4a5f-8532-833f63850539" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/LeaderboardActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/Score.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/drawable/pill_button_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/drawable/white_boarder_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/layout/activity_leaderboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Controllers/AdController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Controllers/AdController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Controllers/LeaderboardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Controllers/LeaderboardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Data/AdImageDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Data/AdImageDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Data/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Data/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Data/ScoreDAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Data/ScoreDAO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Models/AdImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Models/AdImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Models/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Models/Score.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Models/TopRank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Models/TopRank.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Freddie&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Freddie",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SA59_Android_CA" />
@@ -71,6 +78,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,8 +94,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735808307134</updated>
+      <workItem from="1736129878361" duration="321000" />
+      <workItem from="1736130240150" duration="1800000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
