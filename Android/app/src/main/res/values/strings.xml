@@ -3,4 +3,6 @@
     <string name="rank">Rank</string>
     <string name="username">Username</string>
     <string name="comp_time">Completion Time</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

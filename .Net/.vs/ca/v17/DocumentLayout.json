@@ -1,14 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\18859\\source\\repos\\ca\\",
+  "WorkspaceRootPath": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|c:\\users\\18859\\source\\repos\\ca\\ca\\ca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\ca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|e:\\nus_study\\sa_learning\\sa4108_mobile_application_development\\ca\\project\\.net\\ca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|c:\\users\\18859\\source\\repos\\ca\\ca\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|e:\\nus_study\\sa_learning\\sa4108_mobile_application_development\\ca\\project\\.net\\ca\\ca.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\ca.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|e:\\nus_study\\sa_learning\\sa4108_mobile_application_development\\ca\\project\\.net\\ca\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|e:\\nus_study\\sa_learning\\sa4108_mobile_application_development\\ca\\project\\.net\\ca\\data\\adimagedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\data\\adimagedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|e:\\nus_study\\sa_learning\\sa4108_mobile_application_development\\ca\\project\\.net\\ca\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|e:\\nus_study\\sa_learning\\sa4108_mobile_application_development\\ca\\project\\.net\\ca\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|e:\\nus_study\\sa_learning\\sa4108_mobile_application_development\\ca\\project\\.net\\ca\\ca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED4549B3-1E85-4799-BB3E-0286AB5EEE1B}|ca\\ca.csproj|solutionrelative:ca\\ca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,15 +38,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ca.http",
+              "DocumentMoniker": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.http",
+              "RelativeDocumentMoniker": "ca\\ca.http",
+              "ToolTip": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.http",
+              "RelativeToolTip": "ca\\ca.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-06T12:25:28.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "ca\\Models\\LoginRequest.cs",
+              "ToolTip": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "ca\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:25:26.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdImageDao.cs",
+              "DocumentMoniker": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Data\\AdImageDao.cs",
+              "RelativeDocumentMoniker": "ca\\Data\\AdImageDao.cs",
+              "ToolTip": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Data\\AdImageDao.cs",
+              "RelativeToolTip": "ca\\Data\\AdImageDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:03:06.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ca\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ca\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-06T11:58:09.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ca",
-              "DocumentMoniker": "C:\\Users\\18859\\source\\repos\\ca\\ca\\ca.csproj",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\appsettings.json",
+              "RelativeDocumentMoniker": "ca\\appsettings.json",
+              "ToolTip": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\appsettings.json",
+              "RelativeToolTip": "ca\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-06T11:56:15.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ca.csproj",
+              "DocumentMoniker": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.csproj",
               "RelativeDocumentMoniker": "ca\\ca.csproj",
-              "ToolTip": "C:\\Users\\18859\\source\\repos\\ca\\ca\\ca.csproj",
+              "ToolTip": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\ca.csproj",
               "RelativeToolTip": "ca\\ca.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -35,13 +120,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ca\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\18859\\source\\repos\\ca\\ca\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\NUS_Study\\Sa_Learning\\SA4108_Mobile_Application_Development\\CA\\Project\\.Net\\ca\\Controllers\\AuthController.cs",
               "RelativeToolTip": "ca\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwAQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAzwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T11:37:33.39Z",
               "EditorCaption": ""

@@ -35,7 +35,6 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.UseHttpsRedirection();
 app.UseCors("AllowAndroidApp");
 app.UseAuthorization();
 app.MapControllers();
