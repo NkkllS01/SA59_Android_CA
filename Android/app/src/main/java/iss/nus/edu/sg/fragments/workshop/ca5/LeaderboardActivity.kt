@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.android_ca.databinding.ActivityLeaderboardBinding
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.OutputStreamWriter
@@ -17,8 +16,8 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 //Team03 Kuo Chi
-class LeaderboardActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityLeaderboardBinding
+class LeaderboardActivity : AppCompatActivity() {}
+   /*  private lateinit var binding: ActivityLeaderboardBinding
     private var scoreList: MutableList<Score> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -158,4 +157,4 @@ class LeaderboardActivity : AppCompatActivity() {
         }
     }
 
-}
+} */
