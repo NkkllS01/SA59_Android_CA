@@ -1,8 +1,6 @@
 using ca.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
 using MySql.Data.MySqlClient;
-using Mysqlx.Resultset;
 
 //Team03 Kuo Chi
 namespace ca.Data
@@ -14,7 +12,7 @@ namespace ca.Data
         {
             List<Score> scores = new List<Score>();
 
-            using (MySqlConnection conn = new MySqlConnection(Constants.CONNECTION_STRING))
+            using (MySqlConnection conn = new MySqlConnection(Constants.CONNECTION_STRING = "Server=localhost;Database=androidCA;User=root;Password=Heythere12#;"))
             {
                 conn.Open();
                 string sql = @"

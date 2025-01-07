@@ -1,4 +1,4 @@
-package com.example.android_ca
+package iss.nus.edu.sg.fragments.workshop.ca5
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,53 +6,126 @@ import android.util.Log
 import android.view.Gravity
 import android.widget.TableRow
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
+import iss.nus.edu.sg.fragments.workshop.ca5.databinding.ActivityLeaderboardBinding
+import iss.nus.edu.sg.fragments.workshop.ca5.FetchActivity
+import iss.nus.edu.sg.fragments.workshop.ca5.network.ApiClient
+import iss.nus.edu.sg.fragments.workshop.ca5.network.LeaderboardApi
+import iss.nus.edu.sg.fragments.workshop.ca5.network.LeaderboardRequest
+import kotlinx.coroutines.launch
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
 import java.net.URL
+import retrofit2.Response
 
 //Team03 Kuo Chi
-class LeaderboardActivity : AppCompatActivity() {}
-   /*  private lateinit var binding: ActivityLeaderboardBinding
+class LeaderboardActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLeaderboardBinding
     private var scoreList: MutableList<Score> = mutableListOf()
+    private val leaderboardApi = ApiClient.retrofit.create(LeaderboardApi::class.java)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
 
         binding = ActivityLeaderboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         initButtons()
 
-        Thread{
-            val endPt = "http://10.0.2.2:5241/Leaderboard/Display"
-            val top = 5
-            scoreList = fetchRecord(endPt,top)
-
+        lifecycleScope.launch {
+            val scoreList = fetchRecord(5)
             if (scoreList.isNotEmpty()) {
-                runOnUiThread {
-                    displayLeaderboard(scoreList)
-                }
+                displayLeaderboard(scoreList)
             } else {
                 Log.e("LeaderboardActivity", "No scores fetched")
+                Toast.makeText(this@LeaderboardActivity, "No record data available", Toast
+                    .LENGTH_SHORT).show()
             }
-        }.start()
+        }
     }
 
     private fun initButtons() {
         binding.apply {
             closeButton.setOnClickListener {
-                val intent = Intent(this@LeaderboardActivity, FetchActivity::class.java)
+                val intent = Intent(this@LeaderboardActivity, DashboardActivity::class.java)
                 startActivity(intent)
             }
         }
     }
 
+    private suspend fun fetchRecord(top: Int): List<Score> {
+        return try {
+            val request = LeaderboardRequest(top)
+            val response = leaderboardApi.getLeaderboard(request)
+            if (response.isSuccessful) {
+                response.body() ?: emptyList()
+            } else {
+                Log.e("LeaderboardActivity", "Server error: ${response.message()}")
+                emptyList()
+            }
+        } catch (e: Exception) {
+            Log.e("LeaderboardActivity", "Network error: ${e.message}")
+            emptyList()
+        }
+    }
+
+    protected fun displayLeaderboard(scoreList: List<Score>) {
+        binding.apply {
+            val tableLayout = leaderboardTable
+            val rowCount = tableLayout.childCount
+            if (rowCount > 1) {
+                tableLayout.removeViews(1, rowCount - 1)
+            }
+
+            for (score in scoreList) {
+                val tableRow = TableRow(this@LeaderboardActivity)
+
+                val rankTextView = TextView(this@LeaderboardActivity).apply {
+                    text = score.rank
+                    layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 3f)
+                    gravity = Gravity.CENTER_HORIZONTAL
+                    setPadding(10, 50, 10, 50)
+                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
+                    textSize = 18f
+                }
+
+                val usernameTextView = TextView(this@LeaderboardActivity).apply {
+                    text = score.username
+                    layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 4f)
+                    gravity = Gravity.CENTER_HORIZONTAL
+                    setPadding(10, 50, 10, 50)
+                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
+                    textSize = 18f
+                }
+
+                val timeTextView = TextView(this@LeaderboardActivity).apply {
+                    text = score.completionTime
+                    layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 6f)
+                    gravity = Gravity.CENTER_HORIZONTAL
+                    setPadding(10, 50, 10, 50)
+                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
+                    textSize = 18f
+                }
+
+                tableRow.addView(rankTextView)
+                tableRow.addView(usernameTextView)
+                tableRow.addView(timeTextView)
+
+                tableLayout.addView(tableRow)
+            }
+        }
+    }
+
+}
+
+    /*
     protected fun fetchRecord(endPt: String, top: Int): MutableList<Score> {
         var conn: HttpURLConnection? = null
 
@@ -109,52 +182,5 @@ class LeaderboardActivity : AppCompatActivity() {}
 
         return scores
     }
+    */
 
-    protected fun displayLeaderboard(scoreList: List<Score>) {
-        binding.apply {
-            val tableLayout = leaderboardTable
-            val rowCount = tableLayout.childCount
-            if (rowCount > 1) {
-                tableLayout.removeViews(1, rowCount - 1)
-            }
-
-            for (score in scoreList) {
-                val tableRow = TableRow(this@LeaderboardActivity)
-
-                val rankTextView = TextView(this@LeaderboardActivity).apply {
-                    text = score.rank
-                    layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 3f)
-                    gravity = Gravity.CENTER_HORIZONTAL
-                    setPadding(10, 50, 10, 50)
-                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
-                    textSize = 18f
-                }
-
-                val usernameTextView = TextView(this@LeaderboardActivity).apply {
-                    text = score.username
-                    layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 4f)
-                    gravity = Gravity.CENTER_HORIZONTAL
-                    setPadding(10, 50, 10, 50)
-                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
-                    textSize = 18f
-                }
-
-                val timeTextView = TextView(this@LeaderboardActivity).apply {
-                    text = score.completionTime
-                    layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 6f)
-                    gravity = Gravity.CENTER_HORIZONTAL
-                    setPadding(10, 50, 10, 50)
-                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
-                    textSize = 18f
-                }
-
-                tableRow.addView(rankTextView)
-                tableRow.addView(usernameTextView)
-                tableRow.addView(timeTextView)
-
-                tableLayout.addView(tableRow)
-            }
-        }
-    }
-
-} */

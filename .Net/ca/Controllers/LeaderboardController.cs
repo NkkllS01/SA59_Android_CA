@@ -13,8 +13,11 @@ using Newtonsoft.Json;
 //Team03 Kuo Chi
 namespace ca.Controllers
 {
+    [Route("api/leaderboard")]
+    [ApiController]
     public class LeaderboardController : Controller
     {
+        [HttpPost("display")]
         public IActionResult Display([FromBody] TopRank rank)
         {
             var num = 0;
