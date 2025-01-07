@@ -30,6 +30,7 @@ class FetchActivity : AppCompatActivity() {
     private val placeholderImages = MutableList(20) { R.drawable.placeholder } // 20 placeholders
     private var currentImageIndex = 0
 
+
     private val imageDownloadReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             val progress = intent.getIntExtra(ImageDownloadService.EXTRA_PROGRESS, 0)
@@ -81,6 +82,13 @@ class FetchActivity : AppCompatActivity() {
 
         binding = ActivityFetchBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Load the logout fragment at the top-right corner
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.logout_fragment_container, LogoutFragment())
+            .commit()
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
