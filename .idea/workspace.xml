@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="734f9b70-e49c-4a5f-8532-833f63850539" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.Net/ca/Data/AdImageDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Data/AdImageDao.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Net/ca/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Net/ca/db/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/db/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Data/ScoreDAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Data/ScoreDAO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,8 @@
       <updated>1735808307134</updated>
       <workItem from="1736129878361" duration="321000" />
       <workItem from="1736130240150" duration="15609000" />
-      <workItem from="1736219640242" duration="2466000" />
+      <workItem from="1736219640242" duration="3801000" />
+      <workItem from="1736256201969" duration="700000" />
     </task>
     <servers />
   </component>

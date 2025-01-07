@@ -6059,19 +6059,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/jinzesong/.nuget/packages/": {}
+    "/Users/freddiekuo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jinzesong/Documents/SA59_Android_CA/.Net/ca/ca.csproj",
+      "projectUniqueName": "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/ca.csproj",
       "projectName": "ca",
-      "projectPath": "/Users/jinzesong/Documents/SA59_Android_CA/.Net/ca/ca.csproj",
-      "packagesPath": "/Users/jinzesong/.nuget/packages/",
-      "outputPath": "/Users/jinzesong/Documents/SA59_Android_CA/.Net/ca/obj/",
+      "projectPath": "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/ca.csproj",
+      "packagesPath": "/Users/freddiekuo/.nuget/packages/",
+      "outputPath": "/Users/freddiekuo/Documents/GitHub/SA59_Android_CA/.Net/ca/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jinzesong/.nuget/NuGet/NuGet.Config"
+        "/Users/freddiekuo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -6094,7 +6094,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -6154,7 +6155,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

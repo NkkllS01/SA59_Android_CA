@@ -130,7 +130,7 @@ class FetchActivity : AppCompatActivity() {
             nextButton.setOnClickListener {
                 val selectedImages = imageAdapter.getSelectedImages()
                 if (selectedImages.size == 6) {
-                    val intent = Intent(this@FetchActivity, PlayActivity::class.java).apply {
+                    val intent = Intent(this@FetchActivity, LeaderboardActivity::class.java).apply {
                         putStringArrayListExtra("selectedImages", ArrayList(selectedImages))
                     }
                     startActivity(intent)
