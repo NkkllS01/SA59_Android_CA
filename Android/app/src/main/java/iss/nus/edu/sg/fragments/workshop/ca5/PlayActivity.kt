@@ -92,18 +92,19 @@ class PlayActivity : AppCompatActivity() {
         }
     }
 
+    //Code by Chen Sirui
     private fun startTimer() {
-        //Code by Chen Sirui
         isTiming = true
         handler.post(runnable)
     }
 
+    //Code by Chen Sirui
     private fun endTimer() {
-        //Code by Chen Sirui
         isTiming = false
         handler.removeCallbacks(runnable)
     }
 
+    // Code by Song Jinze
     private fun timeCalculator(): Triple<Int, Int, Int> {
         val time = (elapsedTime/1000).toInt()
         val hours = time / 3600
@@ -112,34 +113,42 @@ class PlayActivity : AppCompatActivity() {
         return Triple(hours, minutes, seconds)
     }
 
+    //Code by Chen Sirui, Song Jinze
     private fun updateTimerText() {
-        //Code by Chen Sirui, Jinze
         val (hours, minutes, seconds) = timeCalculator()
         binding.timerText.text = String.format("%02d:%02d:%02d", hours, minutes, seconds)
     }
 
+    //Code by Chen Sirui, Song Jinze
     private fun showGameEndDialog() {
-        //Code by Chen Sirui, Jinze
         val (hours, minutes, seconds) = timeCalculator()
         val completionTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
 
         val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
         val username = sharedPreferences.getString("username", "")
 
+        // 提交分数
         submitScore(username, completionTime)
 
         val dialogBuilder = AlertDialog.Builder(this)
         dialogBuilder.setTitle("Congratulations!")
-        dialogBuilder.setMessage("Your time is $minutes minutes $seconds seconds!")
+
+        if (hours > 0)
+            dialogBuilder.setMessage("Your time is $hours hours $minutes minutes $seconds seconds!")
+        else
+            dialogBuilder.setMessage("Your time is $minutes minutes $seconds seconds!")
+
         dialogBuilder.setPositiveButton("Roger that!"){dialog,_ ->dialog.dismiss()}
 
         val alertDialog = dialogBuilder.create()
         alertDialog.show()
     }
 
+    // Code by Song Jinze
     private fun submitScore(username: String?, completionTime: String) {
         val scoreDto = ScoreDto(username, completionTime)
 
+        // 将scoreDto作为参数，向服务器提交得分
         scoreApi.addScore(scoreDto).enqueue(object : Callback<Void> {
             override fun onResponse(call: Call<Void>, response: Response<Void>) {
                 if (response.isSuccessful) {
