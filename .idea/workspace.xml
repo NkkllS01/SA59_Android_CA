@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="734f9b70-e49c-4a5f-8532-833f63850539" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Android/app/src/main/res/drawable/white_border_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Net/ca/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Data/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Net/ca/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Net/ca/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Net/ca/db/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/db/database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/network/LeaderboardApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/network/LeaderboardRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Controllers/LeaderboardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Controllers/LeaderboardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Data/ScoreDAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Data/ScoreDAO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/bin/Debug/net8.0/ca.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/bin/Debug/net8.0/ca.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/bin/Debug/net8.0/ca.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/bin/Debug/net8.0/ca.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ca.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ref/ca.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/ref/ca.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/refint/ca.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.Net/ca/obj/Debug/net8.0/refint/ca.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/drawable/white_boarder_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/LeaderboardActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/LeaderboardActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/Score.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/java/iss/nus/edu/sg/fragments/workshop/ca5/Score.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/layout/activity_leaderboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/layout/activity_leaderboard.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735808307134</updated>
       <workItem from="1736129878361" duration="321000" />
-      <workItem from="1736130240150" duration="5415000" />
+      <workItem from="1736130240150" duration="13294000" />
     </task>
     <servers />
   </component>

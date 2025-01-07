@@ -1,4 +1,4 @@
-package com.example.android_ca
+package iss.nus.edu.sg.fragments.workshop.ca5
 
 //Team03 Kuo Chi
 data class Score(
@@ -6,3 +6,4 @@ data class Score(
     val username: String,
     val completionTime: String
 )
+
