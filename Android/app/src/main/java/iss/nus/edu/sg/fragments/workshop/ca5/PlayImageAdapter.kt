@@ -10,7 +10,7 @@ class PlayImageAdapter(
     private val images: List<String>,
     private val onImageClick: (Int) -> Unit
 ) : RecyclerView.Adapter<PlayImageAdapter.ImageViewHolder>() {
-
+    //Code by Chen Sirui
     private val flippedStates = MutableList(images.size) { false }
 
     inner class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

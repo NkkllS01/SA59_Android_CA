@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import iss.nus.edu.sg.fragments.workshop.ca5.databinding.ActivityPlayBinding
 
 class PlayActivity : AppCompatActivity() {
+    //Code by Chen Sirui
     private lateinit var binding:ActivityPlayBinding
     private lateinit var imageAdapter: PlayImageAdapter
     private var flippedPositions = mutableListOf<Int>()
@@ -20,6 +21,7 @@ class PlayActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private val runnable = object : Runnable{
         override fun run(){
+            //Code by Chen Sirui
             if(isTiming){
                 elapsedTime += 1000
                 updateTimerText()
@@ -29,6 +31,7 @@ class PlayActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Code by Chen Sirui
         super.onCreate(savedInstanceState)
         binding = ActivityPlayBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -43,6 +46,7 @@ class PlayActivity : AppCompatActivity() {
         }
     }
     private fun onImageClicked(position:Int){
+        //Code by Chen Sirui
         if(flippedPositions.size<2 && !imageAdapter.isFlipped(position)){
             imageAdapter.flipImage(position)
             flippedPositions.add(position)
@@ -56,6 +60,7 @@ class PlayActivity : AppCompatActivity() {
     }
 
     private fun checkForMatch(){
+        //Code by Chen Sirui
         if(flippedPositions.size != 2){return}
         val firstImage = flippedPositions[0]
         val secondImage = flippedPositions[1]
@@ -78,20 +83,24 @@ class PlayActivity : AppCompatActivity() {
 
     }
     private fun startTimer(){
+        //Code by Chen Sirui
         isTiming = true
         handler.post(runnable)
     }
     private fun endTimer(){
+        //Code by Chen Sirui
         isTiming = false
         handler.removeCallbacks(runnable)
     }
     private fun updateTimerText(){
+        //Code by Chen Sirui
         val time = (elapsedTime/1000).toInt()
         val seconds = time%60
         val minutes = time/60
         binding.timerText.text = String.format("Timer: %02d:%02d",minutes,seconds)
     }
     private fun showGameEndDialog(){
+        //Code by Chen Sirui
         val time = (elapsedTime/1000).toInt()
         val minutes = time/60
         val seconds = time%60
@@ -105,6 +114,7 @@ class PlayActivity : AppCompatActivity() {
         alertDialog.show()
     }
     private fun duplicate(images: List<String>):MutableList<String>{
+        //Code by Chen Sirui
         val duplicatedImages = mutableListOf<String>()
         for(image in images){
             duplicatedImages.add(image)
