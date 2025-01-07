@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Team03 Kuo Chi -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white" >
+    android:background="@color/white">
 
     <FrameLayout
         android:id="@+id/logout_fragment_container"
@@ -21,7 +22,10 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="200dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp" />
 
     <TableLayout
         android:id="@+id/leaderboard_table"
@@ -31,6 +35,9 @@
         android:layout_marginBottom="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
+        app:layout_constraintTop_toBottomOf="@id/leaderboard_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/white">
 
         <TableRow
@@ -86,4 +93,13 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/pill_button_background" />
 
-</LinearLayout>
+    <FrameLayout
+        android:id="@+id/adFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

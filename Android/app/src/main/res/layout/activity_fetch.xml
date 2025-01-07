@@ -101,15 +101,17 @@
             android:layout_gravity="center"
             android:layout_marginStart ="20dp"
             />
-        <FrameLayout
-            android:id="@+id/adFragmentContainer"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/adFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"  />
 
 </LinearLayout>
