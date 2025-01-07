@@ -54,7 +54,7 @@ class LeaderboardActivity : AppCompatActivity() {
     private fun initButtons() {
         binding.apply {
             closeButton.setOnClickListener {
-                val intent = Intent(this@LeaderboardActivity, DashboardActivity::class.java)
+                val intent = Intent(this@LeaderboardActivity, FetchActivity::class.java)
                 startActivity(intent)
             }
         }

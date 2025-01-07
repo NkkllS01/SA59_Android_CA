@@ -46,3 +46,17 @@ VALUES 	(1, 1, '00:08:15'),
           (14, 6, '00:10:36'),
           (15, 8, '00:12:16'),
           (16, 7, '00:10:28');
+
+CREATE TABLE AdImage(
+                        Id int NOT NULL,
+                        imageurl varchar(200),
+                        Primary Key (Id)
+);
+
+INSERT INTO AdImage(Id, imageurl)
+VALUES 	(1, 'https://images.pexels.com/photos/2016145/pexels-photo-2016145.jpeg?auto=compress&cs=tinysrgb&w=800'),
+          (2, 'https://images.pexels.com/photos/988952/pexels-photo-988952.jpeg?auto=compress&cs=tinysrgb&w=800'),
+          (3, 'https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&w=800'),
+          (4, 'https://images.pexels.com/photos/1435750/pexels-photo-1435750.jpeg?auto=compress&cs=tinysrgb&w=800'),
+          (5, 'https://images.pexels.com/photos/1961795/pexels-photo-1961795.jpeg?auto=compress&cs=tinysrgb&w=800'),
+          (6, 'https://images.pexels.com/photos/2272752/pexels-photo-2272752.jpeg?auto=compress&cs=tinysrgb&w=800');
