@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 using ca.Models;
 
 public class AdImageDao{
-    string connectionString =@"server=localhost;uid=root;pwd=password;database=androidCA";
+    string connectionString =@"server=localhost;uid=root;pwd=Heythere12#;database=password";
 
         public List<AdImage> GetAlladImageUrl(){
 

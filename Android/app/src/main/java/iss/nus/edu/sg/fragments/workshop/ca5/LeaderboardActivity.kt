@@ -34,6 +34,15 @@ class LeaderboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
+        val userType = sharedPreferences.getString("userType","")
+        if (userType == "free") {
+            val adFragment = AdFragment()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.adFragmentContainer, adFragment)
+                .commit()
+        }
+
         binding = ActivityLeaderboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
