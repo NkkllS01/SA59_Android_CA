@@ -13,12 +13,9 @@ class PlayImageAdapter(
 ) : RecyclerView.Adapter<PlayImageAdapter.ImageViewHolder>() {
     //Code by Chen Sirui
     private val flippedStates = MutableList(images.size) { false }
-    private val matchedStates = MutableList(images.size) { false }
-    private val errorStates = MutableList(images.size) { false }
 
     inner class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.image_view)
-        val borderView: View = itemView.findViewById(R.id.border_view)
 
         init {
             itemView.setOnClickListener {
@@ -45,18 +42,7 @@ class PlayImageAdapter(
         } else {
             holder.imageView.setImageResource(R.drawable.placeholder)
         }
-        when {
-            matchedStates[position]->{
-                holder.borderView.setBackgroundResource(R.drawable.green_border)
-            }
-            errorStates[position]->{
-                holder.borderView.setBackgroundResource(R.drawable.red_border)
-            }
-            else ->{
-                holder.borderView.setBackgroundResource(android.R.color.transparent)
-            }
-        }
-    }
+}
 
     override fun getItemCount(): Int = images.size
 
@@ -71,20 +57,4 @@ class PlayImageAdapter(
     }
 
     fun isFlipped(position: Int): Boolean = flippedStates[position]
-
-    fun setMatched(position: Int, isMatched: Boolean) {
-        matchedStates[position] = isMatched
-        notifyItemChanged(position)
-    }
-
-    fun setError(position: Int, isError: Boolean) {
-        errorStates[position] = isError
-        notifyItemChanged(position)
-    }
-
-    fun clearBorders() {
-        matchedStates.fill(false)
-        errorStates.fill(false)
-        notifyDataSetChanged() // clear all borders
-    }
 }

@@ -91,13 +91,10 @@ class PlayActivity : AppCompatActivity() {
         val secondImage = flippedPositions[1]
         if (duplicatedImages[firstImage]==duplicatedImages[secondImage]) {
             matchedCount++
-            imageAdapter.setMatched(firstImage,true)
-            imageAdapter.setMatched(secondImage,true)
             binding.matchingCountText.text = "Matched: $matchedCount / $totalMatches"
             flippedPositions.clear()
 
             if (matchedCount == totalMatches){
-                imageAdapter.clearBorders()
                 endTimer()
                 showGameEndDialog()
             }
@@ -200,13 +197,9 @@ class PlayActivity : AppCompatActivity() {
 
     //Code by Chen Sirui
     private fun mismatchHandler(firstImage:Int, secondImage:Int){
-        imageAdapter.setError(firstImage,true)
-        imageAdapter.setError(secondImage,true)
         Handler(Looper.getMainLooper()).postDelayed({
             imageAdapter.hideImage(firstImage)
             imageAdapter.hideImage(secondImage)
-            imageAdapter.setError(firstImage,false)
-            imageAdapter.setError(secondImage,false)
             flippedPositions.clear()
         },2000)
     }
