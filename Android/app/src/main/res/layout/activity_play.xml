@@ -17,13 +17,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Match It Up!"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp" />
 
     <LinearLayout
+        android:id="@+id/counterTimerText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -36,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Matched: 0 / 6"
+            android:textSize="24sp"
             android:gravity="start" />
 
         <TextView
@@ -43,7 +45,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Timer: 00:00"
+            android:text="Timer: 00:00:00"
+            android:textSize="24sp"
             android:gravity="end" />
 
     </LinearLayout>
@@ -52,9 +55,10 @@
         android:id="@+id/imageGrid"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:layout_above="@id/adFragmentContainer"
-        android:layout_below="@id/titleText"
+        android:layout_below="@id/counterTimerText"
         />
 
     <FrameLayout

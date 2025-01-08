@@ -24,7 +24,7 @@ class PlayActivity : AppCompatActivity() {
     private var matchedCount = 0
     private val totalMatches = 6
 
-    private val scoreApi: ScoreApi = ApiClient.retrofit.create(ScoreApi::class.java);
+    private val scoreApi: ScoreApi = ApiClient.retrofit.create(ScoreApi::class.java)
 
     private lateinit var duplicatedImages:MutableList<String>
     private var isTiming = false
@@ -98,11 +98,7 @@ class PlayActivity : AppCompatActivity() {
                 showGameEndDialog()
             }
         } else {
-            Handler(Looper.getMainLooper()).postDelayed({
-                imageAdapter.hideImage(firstImage)
-                imageAdapter.hideImage(secondImage)
-                flippedPositions.clear()
-            },2000)
+            mismatchHandler(firstImage,secondImage)
         }
     }
 
@@ -180,8 +176,8 @@ class PlayActivity : AppCompatActivity() {
         })
     }
 
+    //Code by Chen Sirui
     private fun duplicate(images: List<String>):MutableList<String> {
-        //Code by Chen Sirui
         val duplicatedImages = mutableListOf<String>()
         for(image in images){
             duplicatedImages.add(image)
@@ -190,5 +186,24 @@ class PlayActivity : AppCompatActivity() {
         duplicatedImages.shuffle()
         Log.d("PlayActivity", "Duplicated Images: $duplicatedImages")//Check For Images
         return duplicatedImages
+    }
+
+    //Code by Chen Sirui
+    private fun mismatchHandler(fisrtImage:Int,secondImage:Int){
+        val dialogBuilder = AlertDialog.Builder(this)
+        dialogBuilder.setTitle("Oops!!")
+        dialogBuilder.setMessage("These two pictures do not match, try again!")
+        dialogBuilder.setCancelable(false)
+
+        val alertDialog = dialogBuilder.create()
+        alertDialog.show()
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            alertDialog.dismiss()
+
+            imageAdapter.hideImage(fisrtImage)
+            imageAdapter.hideImage(secondImage)
+            flippedPositions.clear()
+        },2000)
     }
 }
