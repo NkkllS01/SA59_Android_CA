@@ -1,5 +1,6 @@
 package iss.nus.edu.sg.fragments.workshop.ca5
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -150,7 +151,13 @@ class PlayActivity : AppCompatActivity() {
         else
             dialogBuilder.setMessage("Your time is $minutes minutes $seconds seconds!")
 
-        dialogBuilder.setPositiveButton("Roger that!"){dialog,_ ->dialog.dismiss()}
+        dialogBuilder.setPositiveButton("Roger that!"){dialog,_ ->
+            dialog.dismiss()
+
+            val intent = Intent(this,LeaderboardActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         val alertDialog = dialogBuilder.create()
         alertDialog.show()
