@@ -9,17 +9,11 @@
     tools:context=".FetchActivity"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/logout_button"
+    <FrameLayout
+        android:id="@+id/logout_fragment_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:textSize="20sp"
-        android:layout_gravity="end"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginTop="0dp"
-        />
+        android:layout_gravity="end|top" />
 
     <LinearLayout
         android:layout_width="match_parent"

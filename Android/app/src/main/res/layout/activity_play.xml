@@ -6,6 +6,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp">
 
+    <FrameLayout
+        android:id="@+id/logout_fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top" />
+
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"

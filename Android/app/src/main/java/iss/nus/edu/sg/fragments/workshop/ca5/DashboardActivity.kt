@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
+//import com.bumptech.glide.Glide
 import iss.nus.edu.sg.fragments.workshop.ca5.databinding.ActivityDashboardBinding
 import okhttp3.OkHttpClient
 import okhttp3.Request
