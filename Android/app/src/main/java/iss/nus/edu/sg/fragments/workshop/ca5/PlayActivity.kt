@@ -3,9 +3,11 @@ package iss.nus.edu.sg.fragments.workshop.ca5
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import iss.nus.edu.sg.fragments.workshop.ca5.databinding.ActivityPlayBinding
 import iss.nus.edu.sg.fragments.workshop.ca5.network.ApiClient
 import iss.nus.edu.sg.fragments.workshop.ca5.network.ScoreApi
@@ -57,9 +59,11 @@ class PlayActivity : AppCompatActivity() {
 
         val selectedImages = intent.getStringArrayListExtra("selectedImages")?: ArrayList()
         duplicatedImages = duplicate(selectedImages)
+        val gridLayoutManager = GridLayoutManager(this,3)
 
         imageAdapter = PlayImageAdapter(duplicatedImages){position -> onImageClicked(position)}
         binding.apply {
+            imageGrid.layoutManager = gridLayoutManager
             imageGrid.adapter = imageAdapter
             matchingCountText.text = "Matched: $matchedCount / $totalMatches"
         }
@@ -104,8 +108,10 @@ class PlayActivity : AppCompatActivity() {
 
     //Code by Chen Sirui
     private fun startTimer() {
-        isTiming = true
-        handler.post(runnable)
+        if(!isTiming){
+            isTiming = true
+            handler.post(runnable)
+        }
     }
 
     //Code by Chen Sirui
@@ -182,6 +188,7 @@ class PlayActivity : AppCompatActivity() {
             duplicatedImages.add(image)
         }
         duplicatedImages.shuffle()
+        Log.d("PlayActivity", "Duplicated Images: $duplicatedImages")//Check For Images
         return duplicatedImages
     }
 }
