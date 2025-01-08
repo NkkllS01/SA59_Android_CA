@@ -45,6 +45,16 @@ class PlayActivity : AppCompatActivity() {
         binding = ActivityPlayBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //AdImage
+        val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
+        val userType = sharedPreferences.getString("userType","")
+        if (userType == "free") {
+            val adFragment = AdFragment()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.adFragmentContainer, adFragment)
+                .commit()
+        }
+
         val selectedImages = intent.getStringArrayListExtra("selectedImages")?: ArrayList()
         duplicatedImages = duplicate(selectedImages)
 

@@ -3,6 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp">
 
     <TextView
@@ -13,7 +14,6 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp" />
 
     <LinearLayout
@@ -38,14 +38,24 @@
             android:layout_weight="1"
             android:text="Timer: 00:00"
             android:gravity="end" />
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/imageGrid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_above="@id/adFragmentContainer"
         android:layout_below="@id/titleText"
-        android:layout_marginBottom="16dp"
         />
 
+    <FrameLayout
+        android:id="@+id/adFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </RelativeLayout>
