@@ -89,9 +89,11 @@
         android:textSize="14sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/pill_button_background" />
+        android:background="@drawable/pill_button_background"
+        app:layout_constraintBottom_toTopOf="@id/adFragmentContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
 
     <FrameLayout
         android:id="@+id/adFragmentContainer"

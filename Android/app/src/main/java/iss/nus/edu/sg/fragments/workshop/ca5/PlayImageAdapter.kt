@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class PlayImageAdapter(
     private val images: List<String>,
@@ -32,12 +33,16 @@ class PlayImageAdapter(
     }
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
-        holder.imageView.setImageResource(if (flippedStates[position]) {
-            images[position].toInt()
+        val imagePath = images[position]
+        if (flippedStates[position]) {
+            Glide.with(holder.imageView.context)
+                .load(imagePath)
+                .placeholder(R.drawable.placeholder)  // load placeholder image
+                .into(holder.imageView)
         } else {
-            R.drawable.placeholder
-        })
-    }
+            holder.imageView.setImageResource(R.drawable.placeholder)
+        }
+}
 
     override fun getItemCount(): Int = images.size
 

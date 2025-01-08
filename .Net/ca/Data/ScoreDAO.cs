@@ -12,7 +12,7 @@ namespace ca.Data
         {
             List<Score> scores = new List<Score>();
 
-            using (MySqlConnection conn = new MySqlConnection(Constants.CONNECTION_STRING = "Server=localhost;Database=androidCA;User=root;Password=password;"))
+            using (MySqlConnection conn = new MySqlConnection(Constants.CONNECTION_STRING = "Server=localhost;Database=androidCA;User=root;Password=Heythere12#;"))
             {
                 conn.Open();
                 string sql = @"
