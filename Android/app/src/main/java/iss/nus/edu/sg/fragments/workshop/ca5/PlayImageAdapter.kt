@@ -40,7 +40,7 @@ class PlayImageAdapter(
         if (flippedStates[position]) {
             Glide.with(holder.imageView.context)
                 .load(imagePath)
-                .placeholder(R.drawable.placeholder)  // 加载占位图
+                .placeholder(R.drawable.placeholder)  // load placeholder image
                 .into(holder.imageView)
         } else {
             holder.imageView.setImageResource(R.drawable.placeholder)
@@ -85,6 +85,6 @@ class PlayImageAdapter(
     fun clearBorders() {
         matchedStates.fill(false)
         errorStates.fill(false)
-        notifyDataSetChanged() // 清除所有边框
+        notifyDataSetChanged() // clear all borders
     }
 }
