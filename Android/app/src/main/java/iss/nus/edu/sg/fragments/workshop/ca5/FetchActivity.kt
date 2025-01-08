@@ -83,11 +83,11 @@ class FetchActivity : AppCompatActivity() {
         binding = ActivityFetchBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Load the logout fragment at the top-right corner
+        /* Load the logout fragment at the top-right corner
         supportFragmentManager.beginTransaction()
             .replace(R.id.logout_fragment_container, LogoutFragment())
             .commit()
-
+        */
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -138,7 +138,7 @@ class FetchActivity : AppCompatActivity() {
             nextButton.setOnClickListener {
                 val selectedImages = imageAdapter.getSelectedImages()
                 if (selectedImages.size == 6) {
-                    val intent = Intent(this@FetchActivity, LeaderboardActivity::class.java).apply {
+                    val intent = Intent(this@FetchActivity, PlayActivity::class.java).apply {
                         putStringArrayListExtra("selectedImages", ArrayList(selectedImages))
                     }
                     startActivity(intent)
