@@ -18,6 +18,7 @@ class PlayImageAdapter(
 
     inner class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.image_view)
+        val borderView: View = itemView.findViewById(R.id.border_view)
 
         init {
             itemView.setOnClickListener {
@@ -46,13 +47,13 @@ class PlayImageAdapter(
         }
         when {
             matchedStates[position]->{
-                holder.imageView.findViewById<View>(R.id.border_view).setBackgroundResource(R.drawable.green_border)
+                holder.borderView.setBackgroundResource(R.drawable.green_border)
             }
             errorStates[position]->{
-                holder.imageView.findViewById<View>(R.id.border_view).setBackgroundResource(R.drawable.red_border)
+                holder.borderView.setBackgroundResource(R.drawable.red_border)
             }
             else ->{
-                holder.imageView.findViewById<View>(R.id.border_view).setBackgroundResource(android.R.color.transparent)
+                holder.borderView.setBackgroundResource(android.R.color.transparent)
             }
         }
     }
