@@ -5,6 +5,12 @@
     android:layout_height="wrap_content"
     android:layout_margin="4dp">
 
+    <View
+        android:id="@+id/border_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="100dp"
