@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                     if (response.isSuccessful) {
                         val loginResponse = response.body()
                         if (loginResponse?.success == true) {
-                            Toast.makeText(this@MainActivity, "Welcome, ${loginResponse.userType}!", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this@MainActivity, "Welcome, " + username + "!", Toast.LENGTH_LONG).show()
 
                             // 保存登录状态
                             val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
