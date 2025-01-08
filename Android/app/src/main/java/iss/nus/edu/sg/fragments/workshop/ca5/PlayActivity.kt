@@ -48,6 +48,10 @@ class PlayActivity : AppCompatActivity() {
         binding = ActivityPlayBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.logout_fragment_container, LogoutFragment())
+            .commit()
+
         //AdImage
         val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
         val userType = sharedPreferences.getString("userType","")
