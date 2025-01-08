@@ -1,5 +1,5 @@
 -- Team03 Kuo Chi --
-DROP DATABASE androidCA;
+DROP DATABASE if exists androidCA;
 CREATE DATABASE androidCA;
 
 USE androidCA;
