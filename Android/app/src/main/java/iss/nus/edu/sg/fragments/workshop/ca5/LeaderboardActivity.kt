@@ -35,6 +35,10 @@ class LeaderboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.logout_fragment_container, LogoutFragment())
+            .commit()
+
         val sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE)
         val userType = sharedPreferences.getString("userType","")
         if (userType == "free") {
