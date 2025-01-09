@@ -1,6 +1,7 @@
 package iss.nus.edu.sg.fragments.workshop.ca5
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
@@ -50,8 +51,10 @@ class LeaderboardActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             val scoreList = fetchRecord(5)
+            val username = intent.getStringExtra("username")?: String
+            val completionTime = intent.getStringExtra("completionTime")?: String
             if (scoreList.isNotEmpty()) {
-                displayLeaderboard(scoreList)
+                displayLeaderboard(scoreList, username.toString(), completionTime.toString())
             } else {
                 Log.e("LeaderboardActivity", "No scores fetched")
                 Toast.makeText(this@LeaderboardActivity, "No record data available", Toast
@@ -85,7 +88,7 @@ class LeaderboardActivity : AppCompatActivity() {
         }
     }
 
-    protected fun displayLeaderboard(scoreList: List<Score>) {
+    protected fun displayLeaderboard(scoreList: List<Score>, username: String, completionTime: String) {
         binding.apply {
             val tableLayout = leaderboardTable
             val rowCount = tableLayout.childCount
@@ -94,6 +97,7 @@ class LeaderboardActivity : AppCompatActivity() {
             }
 
             for (score in scoreList) {
+                val isCurrentPlaythrough = score.username == username && score.completionTime == completionTime
                 val tableRow = TableRow(this@LeaderboardActivity)
 
                 val rankTextView = TextView(this@LeaderboardActivity).apply {
@@ -101,8 +105,17 @@ class LeaderboardActivity : AppCompatActivity() {
                     layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 3f)
                     gravity = Gravity.CENTER_HORIZONTAL
                     setPadding(10, 50, 10, 50)
-                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
                     textSize = 18f
+                    if (isCurrentPlaythrough) {
+                        setBackgroundColor(ContextCompat.getColor(
+                            this@LeaderboardActivity, R.color.light_yellow))
+                        setTextColor(ContextCompat.getColor(
+                                this@LeaderboardActivity, R.color.black))
+                        setTypeface(null, Typeface.BOLD)
+                    } else {
+                        setTextColor(ContextCompat.getColor(
+                                this@LeaderboardActivity, R.color.dark_grey))
+                    }
                 }
 
                 val usernameTextView = TextView(this@LeaderboardActivity).apply {
@@ -110,8 +123,17 @@ class LeaderboardActivity : AppCompatActivity() {
                     layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 4f)
                     gravity = Gravity.CENTER_HORIZONTAL
                     setPadding(10, 50, 10, 50)
-                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
                     textSize = 18f
+                    if (isCurrentPlaythrough) {
+                        setBackgroundColor(ContextCompat.getColor(
+                            this@LeaderboardActivity, R.color.light_yellow))
+                        setTextColor(ContextCompat.getColor(
+                            this@LeaderboardActivity, R.color.black))
+                        setTypeface(null, Typeface.BOLD)
+                    } else {
+                        setTextColor(ContextCompat.getColor(
+                            this@LeaderboardActivity, R.color.dark_grey))
+                    }
                 }
 
                 val timeTextView = TextView(this@LeaderboardActivity).apply {
@@ -119,8 +141,17 @@ class LeaderboardActivity : AppCompatActivity() {
                     layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 6f)
                     gravity = Gravity.CENTER_HORIZONTAL
                     setPadding(10, 50, 10, 50)
-                    setTextColor(ContextCompat.getColor(this@LeaderboardActivity, R.color.dark_grey))
                     textSize = 18f
+                    if (isCurrentPlaythrough) {
+                        setBackgroundColor(ContextCompat.getColor(
+                            this@LeaderboardActivity, R.color.light_yellow))
+                        setTextColor(ContextCompat.getColor(
+                            this@LeaderboardActivity, R.color.black))
+                        setTypeface(null, Typeface.BOLD)
+                    } else {
+                        setTextColor(ContextCompat.getColor(
+                            this@LeaderboardActivity, R.color.dark_grey))
+                    }
                 }
 
                 tableRow.addView(rankTextView)
