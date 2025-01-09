@@ -1,5 +1,5 @@
 -- Team03 Kuo Chi --
-DROP DATABASE if exists androidCA;
+DROP DATABASE IF EXISTS androidCA;
 CREATE DATABASE androidCA;
 
 USE androidCA;
@@ -23,29 +23,29 @@ VALUES 	(1, 'Annie', 'gdipsa', 'free'),
           (8, 'Helen', 'gdipsa', 'paid');
 
 CREATE TABLE Record(
-                       RecordId int NOT NULL,
+                       RecordId int NOT NULL AUTO_INCREMENT,
                        UserId int NOT NULL,
                        CompletionTime TIME NOT NULL,
                        Primary Key (RecordId)
 );
 
 INSERT INTO Record(RecordId, UserId, CompletionTime)
-VALUES 	(1, 1, '00:08:15'),
-          (2, 2, '00:10:32'),
-          (3, 1, '00:11:01'),
-          (4, 3, '00:09:56'),
-          (5, 2, '00:10:17'),
-          (6, 4, '00:07:39'),
-          (7, 3, '00:06:35'),
-          (8, 5, '00:07:39'),
-          (9, 4, '00:08:52'),
-          (10, 6, '00:10:41'),
-          (11, 5, '00:12:03'),
-          (12, 7, '00:11:38'),
-          (13, 8, '00:09:22'),
-          (14, 6, '00:10:36'),
-          (15, 8, '00:12:16'),
-          (16, 7, '00:10:28');
+VALUES 	(1, 1, '00:01:15'),
+          (2, 2, '00:00:32'),
+          (3, 1, '00:01:01'),
+          (4, 3, '00:01:56'),
+          (5, 2, '00:01:17'),
+          (6, 4, '00:00:29'),
+          (7, 3, '00:00:35'),
+          (8, 5, '00:00:29'),
+          (9, 4, '00:00:52'),
+          (10, 6, '00:00:41'),
+          (11, 5, '00:01:03'),
+          (12, 7, '00:01:38'),
+          (13, 8, '00:00:22'),
+          (14, 6, '00:01:36'),
+          (15, 8, '00:01:16'),
+          (16, 7, '00:01:28');
 
 CREATE TABLE AdImage(
                         Id int NOT NULL,
