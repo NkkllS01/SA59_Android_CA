@@ -154,7 +154,10 @@ class PlayActivity : AppCompatActivity() {
         dialogBuilder.setPositiveButton("Roger that!"){dialog,_ ->
             dialog.dismiss()
 
-            val intent = Intent(this,LeaderboardActivity::class.java)
+            val intent = Intent(this,LeaderboardActivity::class.java).apply{
+                putExtra("username", username)
+                putExtra("completionTime", completionTime)
+            }
             startActivity(intent)
             finish()
         }

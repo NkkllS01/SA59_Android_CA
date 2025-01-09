@@ -90,6 +90,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:background="@drawable/pill_button_background"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toTopOf="@id/adFragmentContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
