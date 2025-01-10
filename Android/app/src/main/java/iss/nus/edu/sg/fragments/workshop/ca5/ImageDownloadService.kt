@@ -53,6 +53,7 @@ class ImageDownloadService : Service() {
                 if (!url.isNullOrEmpty()) {
                     // Stop any existing download thread
                     if (url != currentUrl) {
+                        stopCurrentDownload()
                         // Clear previous image URLs before starting new download
                         imageUrls.clear()
                         Log.i("ImageDownloadService", "Image URLs cleared. Starting download for $url...")
